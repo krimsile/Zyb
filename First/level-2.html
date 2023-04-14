@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6,200px);
+            grid-template-rows: 100px 400px 200px;
+        }
+        .images {
+            background-image: url(images/onepiece.jpg);
+            background-size: 100% 100%;
+        }
+        article {
+            grid-column: 1/span 2;
+        }
+        aside {
+            grid-column-start: 3;
+            grid-column-end: 7;
+        }
+        .item1 {
+            grid-column: 1/span 2;
+        }
+        .item2 {
+            grid-column: 3/span 2;
+        }
+        .item3 {
+            grid-column: 5/span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="images"></div>
+        <div class="images"></div>
+        <div class="images"></div>
+        <div class="images"></div>
+        <div class="images"></div>
+        <div class="images"></div>
+        <article class="images"></article>
+        <aside class="images"></aside>
+        <div class="item1 images"></div>
+        <div class="item2 images"></div>
+        <div class="item3 images"></div>
+
+
+    </div>
+</body>
+</html>
